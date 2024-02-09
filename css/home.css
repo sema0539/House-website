@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&effect=neon|outline|emboss|shadow-multiple');
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+p{
+    color:white;
+}
+
+h1{
+    color: white;
+    font-size: 90px;
+}
+
+h1.fire-guerrilla{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font: normal;
+}
+
+h1.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+h1.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
