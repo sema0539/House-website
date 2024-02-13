@@ -11,28 +11,60 @@ p{
 
 h1{
     color: white;
-    font-size: 90px;
-}
-
-h1.fire-guerrilla{
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: 400;
-    font: normal;
 }
 
 h1.anton-regular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Anton", sans-serif;
     font-weight: 400;
+    font-size: 75px;
     font-style: normal;
     color: white;
 }
 
 h1.honk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Honk", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-size: 120px;
   font-style: normal;
   font-variation-settings:
     "MORF" 15,
     "SHLN" 50;
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #ff9900;
+    color: white;
+  }
