@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Main Page</title>
         <link rel="stylesheet" href="../css/home.css">
+        <script src="../js/form.js"></script>
     </head>
     <body>
         <div class="container">
@@ -31,7 +32,16 @@
                 <h2  class="anton-regular">Love & Murder</h2>
                 <p>1oz Campari, 1oz Green Charteuse, 1oz Lime Juice, 0.75oz Simple Syrup, 4 drops Saline Solution</p>
                 <!--edit button-->
-                <button type="button" class="button button1">Edit Menu</button>
+                <button id="editButton" type="button" class="button button1" onclick="openForm()">Edit Menu</button>
+                <!--Form to log in and edit page-->
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+                        <h1>Edit Menu!</h1>
+                        <p>This is a popup box!</p>
+                        <button id="closePopup" type="button" class="button button1" onclick="closeForm()">Close</button>
+                    </div>
+                </div>
+                
             </main>
             <footer>
                 <h2 class="anton-regular">by Sean Masucci</h2>
