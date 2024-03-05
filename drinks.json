@@ -1,0 +1,9 @@
+{
+    "Drinks": [
+        {
+            "drinkName": "El Presidente",
+            "description": "1.5oz White Rum, 0.75oz Dry Vermouth, 0.25oz Orange Coracao, 2 dashes of grenadine",
+            "drink_type": "cocktail"
+        }
+    ]
+}
