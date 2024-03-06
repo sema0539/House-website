@@ -1,4 +1,3 @@
-
 function openForm() {
     myPopup.classList.add("show");
 }
