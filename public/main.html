@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Main Page</title>
+        <link rel="stylesheet" href="css/home.css">
+        <script src="js/form.js"></script>
+        <script src="js/add_drink.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Casa House</h1>
+            </header>
+            <!--Nav bar-->
+            <nav class="flexbox" aria-label="Primary-nav">
+                <ul>
+                    <li><a href="#home">Menu</a></li>
+                    <li><a href="#bar">Find a Bar</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </nav>
+            <main>
+                <!--Main menu body-->
+                <h1 class="honk">Drink Menu</h1>
+                <ul id="myUL">
+                    <li id="menuListItem">
+                        <button class="close">X</button> <!--will need to hide this button when not logged in-->
+                        <h2 class="anton-regular">El Presidente</h2> 
+                        <p>1.5oz White Rum, 0.75oz Dry Vermouth, 0.25oz Orange Coracao, 2 dashes of grenadine</p>
+                    </li>
+                    <li id="menuListItem">
+                        <button class="close">X</button>
+                        <h2 class="anton-regular">El Presidente</h2>
+                        <p>1.5oz White Rum, 0.75oz Dry Vermouth, 0.25oz Orange Coracao, 2 dashes of grenadine</p>
+                    </li>
+                </ul>
+                <!--edit button-->
+                <button id="editButton" type="button" class="button button1" onclick="openForm()">Edit Menu</button>
+                <!--Form to log in and edit page-->
+                <div id="myPopup" class="popup">
+                    <div class="popup-content">
+                        <h1 style="text-align: center; margin-bottom: 15px;">Add Item</h1>
+                        <input id="myInput" type="text" placeholder="Title...">
+                        <button id="closePopup" type="button" class="button button1 addBtn" onclick="newElement(); closeForm();">Add</button>
+                        <button id="closePopup" type="button" class="button button1" onclick="closeForm()">Close</button>
+                    </div>
+                </div>
+                
+            </main>
+            <footer>
+                <h2 class="anton-regular">by Sean Masucci</h2>
+            </footer>
+        </div>
+    </body>
+</html>

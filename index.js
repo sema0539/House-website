@@ -3,9 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 const hostname = 'localhost';
-const port = 3000;
+const port1 = 8000;
 
-const server = http.createServer((req, res) => {
+const server1 = http.createServer((req, res) => {
     console.log('Request for ' + req.url + ' by method ' + req.method);
 
     if (req.method == 'GET') {
@@ -55,6 +55,11 @@ const server = http.createServer((req, res) => {
 });
 
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+server1.listen(port1, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port1}/`);
 });
+
+//run this for json server PS C:\Coding Projects\House_website\public> npx json-server drinks.json
+fetch('http://localhost:3000/Drinks')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
