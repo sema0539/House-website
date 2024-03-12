@@ -10,7 +10,7 @@ const server1 = http.createServer((req, res) => {
 
     if (req.method == 'GET') {
         var fileUrl;
-        if (req.url == '/') fileUrl = '/html/main.html';
+        if (req.url == '/') fileUrl = '/main.html';
         else fileUrl = req.url;
 
         var filePath = path.resolve('./public' + fileUrl);
@@ -18,7 +18,7 @@ const server1 = http.createServer((req, res) => {
         if (fileExt == '.html') {
             fs.exists(filePath, (exists) => {
                 if (!exists) {
-                    filePath = path.resolve('./public/html/404.html');
+                    filePath = path.resolve('./public/404.html');
                     res.statusCode = 404;
                     res.setHeader('Content-Type', 'text/html');
                     fs.createReadStream(filePath).pipe(res);
@@ -40,7 +40,7 @@ const server1 = http.createServer((req, res) => {
             fs.createReadStream(filePath).pipe(res);
         }
         else {
-            filePath = path.resolve('./public/html/404.html');
+            filePath = path.resolve('./public/404.html');
             res.statusCode = 404;
             res.setHeader('Content-Type', 'text/html');
             fs.createReadStream(filePath).pipe(res);

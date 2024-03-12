@@ -22,7 +22,7 @@ for (i = 0; i < close.length; i++) {
 function newElement() {
   //new item to add to the list var
   var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
+  var inputValue = document.getElementById("drink_name").value;
   var h2 = document.createElement("h2");
   if (inputValue === '') {
     alert("You must write something!");
@@ -42,6 +42,6 @@ function newElement() {
     //add new item to the list
     document.getElementById("myUL").appendChild(li);
   }
-  document.getElementById("myInput").value = "";
+  document.getElementById("drink_name").value = "";
   
 }
