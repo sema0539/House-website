@@ -22,10 +22,13 @@ for (i = 0; i < close.length; i++) {
 function newElement() {
   //new item to add to the list var
   var li = document.createElement("li");
-  var inputValue = document.getElementById("drink_name").value;
+  var drinkName = document.getElementById("drink_name").value;
+  // var drinkType = document.getElementById("drink_type").value; add later
+  var drinkDescription = document.getElementById("drink_description").value;
   var h2 = document.createElement("h2");
-  if (inputValue === '') {
-    alert("You must write something!");
+  var paragraph = document.createElement("p")
+  if (drinkName === '' || drinkDescription === '') {
+    alert("You must fill out out both the name and description!");
   } else {
     //add close button
     var button = document.createElement("button");
@@ -34,11 +37,15 @@ function newElement() {
     button.appendChild(txt);
     li.appendChild(button);
 
-    //add value to h2
+    //add value to h2 and paragraph
     h2.className = "anton-regular";
-    var drink = document.createTextNode(inputValue)
-    h2.appendChild(drink);
+    var textDrinkName = document.createTextNode(drinkName);
+    // var textDinkType = document.createTextNode(drinkType); add later
+    var textDrinkDescription = document.createTextNode(drinkDescription);
+    h2.appendChild(textDrinkName);
+    paragraph.appendChild(textDrinkDescription);
     li.appendChild(h2);
+    li.appendChild(paragraph);
     //add new item to the list
     document.getElementById("myUL").appendChild(li);
   }

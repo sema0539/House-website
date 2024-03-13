@@ -175,7 +175,7 @@ main ul li p{
 /*Buttons styling*/
 .button {
   border: none;
-  border-radius: 6px;
+  border-radius: 28px;
   color: black;
   padding: 15px;
   text-align: center;
@@ -211,8 +211,9 @@ main ul li p{
    margin: 10% auto;
    padding: 20px;
    border: 1px solid #888888;
-   width: 30%;
+   width: 60%;
    font-weight: bolder;
+   border-radius: 60px;
 }
 
 .popup-content button {
@@ -235,10 +236,10 @@ fieldset {
 legend {
   font-size: 1.25em;
   padding: 0;
-  color: rgb(255, 255, 255);
+  color: white;
   position: relative;
   top: 1em;
-  border-bottom: solid 1px rgb(0, 0, 0);
+  border-bottom: solid 1px white;
 }
 
 label {
@@ -257,11 +258,13 @@ input {
   border-radius: 6px;
   padding: 5px;
   font-size: 16px;
+  width: 100%;
 }
 
 input[type="submit"]{
   padding: 5px;
   margin-top: 15px;
+  width: 7em;
 }
 
 .addBtn {
@@ -320,9 +323,6 @@ input[type="submit"]{
     border-radius: 6px;
     margin-top: 10px;
   }
-  .popup-content {
-    width: 60%;
-  }
 }
 
 @media screen and (max-width: 640px)  {
@@ -373,8 +373,5 @@ input[type="submit"]{
     cursor: pointer;
     border-radius: 6px;
     margin-top: 10px;
-  }
-  .popup-content {
-    width: 60%;
   }
 }
