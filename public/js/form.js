@@ -1,20 +1,9 @@
 function openForm() {
     myPopup.classList.add("show");
 }
-
-function openFormLogin() {
-    var isloggedin = login.getAttribute("value");
-    if(isloggedin === "true"){
-        myPopupLogin.classList.add("show");
-    }
-}
   
 function closeForm() {
     myPopup.classList.remove("show");
-}
-
-function closeFormLogin() {
-    myPopupLogin.classList.remove("show");
 }
 
 function loginFunc() {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/home.css">
+        <script src="js/form.js"></script>
+    </head>
+    <body>
+        <div id="myPopupLogin" class="popup; show">
+            <form class="popup-content" action="#">
+                <fieldset>
+                    <legend>Login page</legend>
+                    <label for="password">
+                        Password: 
+                        <input type="password" id="password">
+                    </label>
+                    <!--fix th eon click function-->
+                    <input type="submit" value="Login" ondblclick="window.location.href='main.html'">
+                </fieldset>
+            </form>
+        </div>
+    </body>

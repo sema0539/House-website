@@ -38,20 +38,7 @@
                     </li>
                 </ul>
                 <!--Log in Button-->
-                <button id="login" type="button" class="button button1" onclick="loginFunc(); openFormLogin(); isLoggedIn()" value="false">Log In</button>
-                <!--form to log in-->
-                <div id="myPopupLogin" class="popup">
-                    <form class="popup-content" action="#">
-                        <fieldset>
-                            <legend>Login page</legend>
-                            <label for="password">
-                                Password: 
-                                <input type="password" id="password">
-                            </label>
-                            <input type="submit" value="Login" onclick="closeFormLogin()">
-                        </fieldset>
-                    </form>
-                </div>
+                <button id="login" type="button" class="button button1" onclick="loginFunc(); isLoggedIn(); window.location.href='login.html'" value="false">Log In</button>
                 <!--edit button-->
                 <button id="editButton" type="button" class="button button1" onclick="openForm()">Edit Menu</button>
                 <!--Form to edit page-->
