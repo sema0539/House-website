@@ -6,9 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Main Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="css/home.css">
-        <script src="js/form.js"></script>
-        <script src="js/add_drink.js"></script>
     </head>
     <body>
         <div class="container">
@@ -18,8 +17,8 @@
             <!--Nav bar-->
             <nav class="flexbox" aria-label="Primary-nav">
                 <ul>
-                    <li><a href="#home">Menu</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#Drink_1">Menu</a></li>
+                    <li><a href="#Drink_2">Blog</a></li>
                 </ul>
             </nav>
             <main>
@@ -27,46 +26,21 @@
                 <h1 class="honk">Drink Menu</h1>
                 <ul id="myUL">
                     <li id="menuListItem">
-                        <button class="close">X</button> <!--will need to hide this button when not logged in-->
                         <h2 class="anton-regular">El Presidente</h2> 
                         <p>1.5oz White Rum, 0.75oz Dry Vermouth, 0.25oz Orange Coracao, 2 dashes of grenadine</p>
                     </li>
                     <li id="menuListItem">
-                        <button class="close">X</button>
                         <h2 class="anton-regular">El Presidente</h2>
                         <p>1.5oz White Rum, 0.75oz Dry Vermouth, 0.25oz Orange Coracao, 2 dashes of grenadine</p>
                     </li>
                 </ul>
-                <!--Log in Button-->
-                <button id="login" type="button" class="button button1" onclick="loginFunc(); isLoggedIn(); window.location.href='login.html'" value="false">Log In</button>
-                <!--edit button-->
-                <button id="editButton" type="button" class="button button1" onclick="openForm()">Edit Menu</button>
-                <!--Form to edit page-->
-                <div id="myPopup" class="popup">
-                    <form class="popup-content" action="#">
-                        <fieldset>
-                            <legend>New Drink Info</legend>
-                            <label for="drink_name">
-                                Drink Name: 
-                                <input type="text" id="drink_name">
-                            </label>
-                            <label for="drink_type">
-                                Type of Drink:
-                                <input type="text" id="drink_type">
-                            </label>
-                            <label for="drink_description">
-                                Description:
-                                <input type="test" id="drink_description">
-                            </label>
-                            <input type="submit" value="Add Drink" onclick="newElement(); closeForm()">
-                        </fieldset>
-                    </form>
-                </div>
-                
             </main>
             <footer>
                 <h2 class="anton-regular">by Sean Masucci</h2>
             </footer>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>
