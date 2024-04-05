@@ -17,9 +17,8 @@ body {
 p{
     font-size: 25px;
     color:white;
-    line-height: 2em;
-    margin-bottom: 25px;
-    border-bottom: solid white;
+    line-height: 1.5em;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -43,6 +42,7 @@ h2 {
   font-weight: 500;
   font-size:2.0em;
   padding: 0.3em 0;
+  color: ghostwhite
 }
 
 .anton-regular {
@@ -60,7 +60,7 @@ h2 {
 }
 
 .intro {
-  background-image: url("../img/city_skyline_day.jpg");
+  background-image: url("../img/city_skyline_night.jpg");
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -70,6 +70,41 @@ h2 {
 }
 
 .carousel-item {
+  height: 100vh;
+}
+
+.carousel-textbox {
+  background-color: black;
+  opacity: 75%;
+}
+
+.carousel-img1 {
+  background-image: url("../img/americano.jpg");
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.carousel-img2 {
+  background-image: url("../img/fools_75.jpg");
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.carousel-img3 {
+  background-image: url("../img/purple_lemon_drop1.jpg");
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   height: 100vh;
 }
 
